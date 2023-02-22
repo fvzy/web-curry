@@ -70,7 +70,7 @@ class Downloader {
                 zip.addLocalFolder(`${outputFolder}.${outputFolderSuffix}`);
                 zip.writeZip(outputFile)
                 setTimeout(() => {
-                fs.rmdir(del, () => { 
+                fs.rmdir(`${outputFolder}.${outputFolderSuffix}`, () => { 
                 console.log("Zipped Success!"); 
                })}, 3000)
             })
