@@ -39,7 +39,7 @@
     "website-scraper": "^4.0.1",
     "fs": "^0.0.1-security",
     "adm-zip": "^0.5.10",
-    "yargs": "^13.2.4",
+    "yargs": "^13.2.4"
   },
   "devDependencies": {
     "@types/jest": "^24.0.15",
