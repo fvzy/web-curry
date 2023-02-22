@@ -50,7 +50,7 @@ web-curry download -s https://jestjs.io/docs/en/getting-started -d https://jestj
 
 ### JavaScript 
 ```javascript
-exec(`web-curry download -s START_POINT -d DOMAIN -o OUTPUT_FOLDER`, async (error, stdout, stderr) => {
+exec(`web-curry download -s https://jestjs.io/docs/en/getting-started -d https://jestjs.io/docs/en/ -o jest-docs -v --include-images`, async (error, stdout, stderr) => {
 if (error) {
         console.log(`error: ${error.message}`);
         return;
