@@ -1,0 +1,57 @@
+{
+  "name": "web-curry",
+  "version": "1.3.0",
+  "description": "An easy to use CLI for downloading websites for offline usage",
+  "main": "index.js",
+  "scripts": {
+    "test-docker": "docker build -t $(./get_image_name.sh) .",
+    "test-js": "npx jest",
+    "test": "npm run test-js && npm run test-docker",
+    "format": "prettier **/*.{js,mjs} --write",
+    "version-bump": "npm test && npx bump --commit --tag --push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wffzy/web-curry.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node",
+    "site",
+    "website",
+    "downloader",
+    "download",
+    "offline",
+    "crawler",
+    "node-website-scraper"
+  ],
+  "author": {
+    "name": "Ditzzy",
+    "email": "hello@zyy.sh"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wffzy/web-curry/issues"
+  },
+  "homepage": "https://github.com/wffzy/web-curry#readme",
+  "dependencies": {
+    "lodash": "^4.17.13",
+    "website-scraper": "^4.0.1",
+    "fs": "^0.0.1-security",
+    "adm-zip": "^0.5.10",
+    "yargs": "^13.2.4",
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/website-scraper": "^1.2.4",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "version-bump-prompt": "^5.0.4"
+  },
+  "bin": {
+    "web-curry": "./index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
